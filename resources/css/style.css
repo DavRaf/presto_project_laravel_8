@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif&display=swap');
+
+*{
+    font-family: 'PT Serif', serif;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Bebas Neue', sans-serif, bold;
+}
+
+:root{
+    --grigiochiaro:#F5F5F5;
+    --grigioazzurro:#D6E6F2;
+    --grigioscuro:#303841;
+}
+
+.bg-grigiochiaro{
+    background-color: var(--grigiochiaro);
+}
+
+.bg-grigioazzurro{
+    background-color: var(--grigioazzurro);
+}
+
+.bg-grigioscuro{
+    background-color: var(--grigioscuro);
+}
+
+.text-grigiochiaro{
+    color: var(--grigiochiaro) !important;
+}
+
+.text-grigioazzurro{
+    color: var(--grigioazzurro) !important;
+}
+
+.text-grigioscuro{
+    color: var(--grigioscuro) !important;
+}
+
+.titolo{
+    font-family:'Bebas Neue', sans-serif, bold;
+    color: var(--grigioscuro);
+    font-size:xx-large;
+    position: absolute;
+    top:0;
+    margin-top: 10px;
+}
+
+.logo{
+    margin-top: -10px;
+}
+
+/* Sistema per footer sempre in basso */
+
+html {
+	position: relative; 
+	min-height: 100%; 
+}
+body {
+	margin-bottom: 109px; 
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: fixed;
+}
+
+/* Navbar */
+
+.navbar{
+    height: 10%;
+}
+
+.testonav{
+    font-family: 'PT Serif', serif !important;
+    color: var(--grigioscuro) !important;
+}
+
+.btn-nav{
+    background-color: var(--grigioscuro);
+    color: var(--grigiochiaro);
+    font-family: 'PT Serif', serif !important;
+    font-size: small; 
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nav-item{
+    padding-left: 1vw;
+}
+
+.testofoot{
+    font-family: 'PT Serif', serif !important;
+    color: var(--grigiochiaro);
+}
+
+/* Caroselli */
+
+.custom-carousel{
+    
+    transition-timing-function: 1s !important;
+}
+
+/* Card */
+
+.card{
+    margin-bottom: 1vh;
+}
+
+.btn-anteprima{
+    background-color: var(--grigioazzurro);
+    color: var(--grigioscuro);
+    font-family: 'PT Serif', serif !important;
+    font-size: small; 
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Popup view */
+
+.truncated {
+    width: 300px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+.product .popup-view{
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;    
+}
+
+.product .popup-view.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.product .popup-card{
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.product .popup-card .product-img{
+    z-index: 2;
+    background: var(--grigioazzurro);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product .popup-card .product-img img{
+    z-index: 2;
+    position: relative;
+    width: 450px;
+}
+
+.product .popup-card .info{
+    z-index: 2;
+    background:var(--grigiochiaro);
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    border-radius: 10px;
+}
+
+.product .popup-card .details-btn{
+    max-height: 4vh;
+    max-width: 14vw;
+    text-decoration: none;
+}
+
+.product .popup-card .close-btn{
+    color: var(--grigioscuro);
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+/* Pagina del prodotto */
+
+.btn-wishlist{
+    background: #F5F5F5;
+    border-color: var(--grigioscuro);
+    color: var(--grigioscuro);
+    height: 4vh;
+    width: 7vw;
+    font-size: 9px;
+}
+
+/* Pagina revisore */
+
+.circle {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle_green {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle_light_green {
+    height: 25px;
+    width: 25px;
+    background-color:lightgreen;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle_yellow {
+    height: 25px;
+    width: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle_orange {
+    height: 25px;
+    width: 25px;
+    background-color:orange;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle_red {
+    height: 25px;
+    width: 25px;
+    background-color:red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.revisor-padding {
+    padding-left: 3rem;
+    padding-right: 3rem;   
+}
+
+/* Responsive styles */
+
+@media (max-width: 1366px) {
+    .revisor-card-padding {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    
+    .product .popup-card{
+        flex-direction: column;
+        width: 550px;
+        height: auto;
+    }
+
+    .product .popup-card .product-img{
+        z-index: 2;
+        width: 100%;
+        height: 200px;
+        transform: translateY(0);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .product .popup-card .product-img img{
+        left: initial;
+        max-width: 75%;
+    }
+
+    .product .popup-card .info{
+        width: auto;
+        height: auto;
+        padding:20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    
+    .product .popup-card .info h2{
+        margin: 20px 5px 5px 5px;
+        font-size: 25px;
+    }
+
+    .product .popup-card .info h4{
+        margin: 20px 5px 5px 5px;
+        font-size: 15px;
+    }
+
+
+    .product .popup-card .info p{
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    .product .popup-card .info .close-btn{
+        z-index: 50;
+        color: var(--grigioscuro);
+    }
+
+    .product .popup-card .popup-btn{
+        height: 10px;
+        width: 60px;
+    }
+
+    .product .popup-card .details-btn{
+        font-size: 12px;
+        max-height: 5vh;
+        max-width: 20%;
+        margin-left: 75%;
+        display: flex;
+    }
+}
+
+/* Cellulari */
+@media (max-width: 539px) {
+    .product .popup-card .details-btn{
+        font-size: 10px;
+        max-height: 5vh;
+        max-width: 22vw;
+        margin-left: 0%;
+     }
+}
+
+/* Galaxy fold e iPhone 5/SE */
+@media (max-width: 320px) {
+    .truncated {
+        width: 200px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+
+    .product .popup-card .details-btn{
+        font-size: 6px;
+        max-height: 5vh;
+        max-width: 22vw;
+        margin-left: 68%;
+    }
+ }
+
+ .card:hover {
+    box-shadow: 0 0 11px var(--grigioscuro);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
